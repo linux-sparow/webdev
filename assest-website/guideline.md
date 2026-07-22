@@ -11,7 +11,7 @@
 |---|---|---|
 | card contributor | 64 px | 64 px |
 | hero image container | 100% | 320 px |
-|  |  |  |
+
 
 ## font 
 | type | size | weight | application |
