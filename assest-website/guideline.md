@@ -2,8 +2,8 @@
 
 | name | size |
 |---|---|
-| width | 24 px |
-| height | 24 px |
+| width | 64 px |
+| height | 100% |
 
 ## picture
 
