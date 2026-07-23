@@ -14,6 +14,7 @@
 
 
 ## font 
+*Inter*, *Manrope*, or *General Sans* = geometric sans-serif
 | type | size | weight | application |
 |---|---|---|---|
 | H1 (Hero headline) | 64 | Bold/700 | Judul utama hero |
