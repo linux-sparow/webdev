@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sparow OS - Download</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="asset-website/logo-sparow.png" alt="logo-sparow" style="height: 64px; width: auto;"/>
+                <span>Sparow Linux</span>
+            </div>
+            <div class="server-info">
+                <span class="host">Official Mirror</span>
+                <span class="status-indicator"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container main-content">
+        <!-- Hero Section -->
+        <div class="hero-section">
+            <div class="hero-image-container">
+                <!-- Ganti source gambar (src) di bawah ini dengan link gambar hero OS Anda -->
+                <img src="asset-website/backround-hero/opsi1.png" alt="Blackbird OS Preview" class="hero-img">
+                <div class="hero-content">
+                    <h1>Sparow OS</h1>
+                    <p>Bring the best Digital Asset Management experience. Select a Sparow edition and download below.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="release-tabs">
+            <button class="tab-btn active" id="btn-amanda">Sparow</button>
+            <!--<button class="tab-btn" id="btn-blackbird">Raven</button>-->
+        </div>
+
+        <div class="file-browser">
+            <div class="browser-header">
+                <div class="col-name">File Name</div>
+                <div class="col-date">Date Modified</div>
+                <div class="col-size">Size</div>
+                <div class="col-action">
+                    <span class="header-align">Download</span>
+                    <span class="header-align" style="visibility: hidden;">Mirror</span>
+                </div>
+            </div>
+            <div class="file-list" id="list-amanda">
+                <!-- ISO Files (Highlight them) -->
+                <div class="file-row iso-file">
+                    <div class="col-name">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10" />
+                            <circle cx="12" cy="12" r="3" />
+                        </svg>
+                        <div class="file-details">
+                            <span class="filename">sparowx86_64.iso</span>
+                            <span class="file-badge">Recommended</span>
+                        </div>
+                    </div>
+                    <div class="col-date">24-July-2026 13:06</div>
+                    <div class="col-size">1.0 GB</div>
+                    <div class="col-action">
+                        <a href="/source/blackbird-amanda.iso" class="btn-download" download>Download</a>
+                        <a href="https://onboardcloud.dl.sourceforge.net/project/blackbird/release-beta/blackbird-amanda.iso?viasf=1&fid=47947c083191922f" target="_blank" class="btn-download">Mirror</a>
+                        
+                    </div>
+                </div>
+                <div class="describe">
+
+                    <h2 class="col-name">Design Purposes</h2>
+
+                    <p>
+                    This operating system is a custom spin designed specifically to optimize Digital Asset Management (DAM) workflows. The goal of this project is to provide a dedicated, reliable environment for modern digital archiving, creative workflows, and robust asset infrastructure.
+                    </p>
+
+                    <p>
+                    Sparow OS offers a lightweight, highly customizable environment equipped with essential open-source tools for digital preservation, advanced metadata processing, and multimedia asset organization.
+                    </p>
+
+                    <p>
+                    One of the main features of this release is the Automated Session Logging during installation and asset handling. This ensures that all system configurations and data processing steps are documented for auditing, troubleshooting, and continuous workflow improvement.
+                    </p>
+
+                    <h3 class="col-name">Main Features</h3>
+                    
+                    <ul>
+                        <li>Optimized environment for Digital Asset Management (DAM)</li>
+                        <li>Integrated open-source tools for metadata processing and digital preservation</li>
+                        <li>Automated terminal session recording for workflow auditing</li>
+                        <li>Lightweight and customizable Linux architecture</li>
+                        <li>CLI-based deployment and system configuration</li>
+                    </ul>
+
+                    <h3 class="col-name">Educational Purpose</h3>
+
+                    <p>
+                    This operating system is developed to bridge the gap between IT infrastructure and effective asset management. It is designed for professionals, archivists, and creators, empowering users to master and implement:
+                    </p>
+
+                    <ul>
+                        <li>Robust Digital Asset Management (DAM) systems</li>
+                        <li>Modern digital preservation and asset curation workflows</li>
+                        <li>Linux-based system administration for data and media servers</li>
+                        <li>Metadata standardization and efficient processings</li>
+                        <li>System logging and comprehensive workflow documentation</li>
+                    </ul>
+
+                    <h3 class="col-name">Warning and Disclaimer</h3>
+
+                    <p>
+                    Sparow OS is provided as a powerful open-source tool for digital asset management and archiving. While built for stability and efficiency, it is distributed without any warranty.
+                    </p>
+
+                    <p>
+                    Users are solely responsible for their own data management. The developers are not liable for any data loss, security breaches, or system instability that may occur during personal, commercial, or enterprise use. Always ensure you maintain secure, independent backups of your digital assets.
+                    </p>
+                </div>
+            </div>
+
+            <div class="file-list" id="list-blackbird" style="display: none;">
+                <!-- ISO Files for Blackbird -->
+                <!--<div class="file-row iso-file">
+                    <div class="col-name">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10" />
+                            <circle cx="12" cy="12" r="3" />
+                        </svg>
+                       <div class="file-details">
+                            <span class="filename">blackbird-ravenx86_64.iso</span>
+                        </div>
+                    </div>
+                    <div class="col-date">15-Apr-2026 09:20</div>
+                    <div class="col-size">1.2 GB</div>
+                    <div class="col-action">
+                        <a href="#" class="btn-download">Download</a>
+                    </div>
+                </div>-->
+                
+                <div class="describe">
+
+                    <h2 class="col-name">Design Purposes</h2>
+
+                    <p>
+                    This operating system is a core of Blackbird Project and Used for internal member only.
+                    </p>
+
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Contributors Section -->
+        <section class="contributors-section">
+            <h2 class="section-title">Sparow Core Team Member</h2>
+            <div class="contributors-grid">
+                <div class="contributor-card">
+                    <div class="avatar">
+                        <img src="/asset-website/contributor-image/bay-card.jpg" alt="Achmad Baihaqi Avatar" class="avatar-img">
+                    </div>
+                    <div class="contributor-info">
+                        <h3>Achmad Baihaqi</h3>
+                        <p>Maintainer OS</p>
+                    </div>
+                </div>
+                <div class="contributor-card">
+                    <div class="avatar">
+                        <img src="/asset-website/contributor-image/agoy-card.jpg" alt="Dimas Yoga Avatar" class="avatar-img">
+                    </div>
+                    <div class="contributor-info">
+                        <h3>Dimas Yoga Irtanto</h3>
+                        <p>Maintainer OS</p>
+                    </div>
+                </div>
+                <div class="contributor-card">
+                    <div class="avatar">
+                        <img src="/asset-website/contributor-image/ridho-card.jpg" alt="Muhammad Ridho Avatar" class="avatar-img">
+                    </div>
+                    <div class="contributor-info">
+                        <h3>Muhammad Ridho N.I</h3>
+                        <p>Maintainer website </p>
+                    </div>
+                </div>
+                <div class="contributor-card">
+                    <div class="avatar">
+                        <img src="/asset-website/contributor-image/dika-card.jpg" alt="Muhammad Tri Andika Avatar" class="avatar-img">
+                    </div>
+                    <div class="contributor-info">
+                        <h3>Muhammad Tri Andika Yustisia</h3>
+                        <p>Social Media</p>
+                    </div>
+                </div>
+                <div class="contributor-card">
+                    <div class="avatar">
+                        <img src="/asset-website/contributor-image/lutfi-card.jpg" alt="Lutfi Sugeng Avatar" class="avatar-img">
+                    </div>
+                    <div class="contributor-info">
+                        <h3>Lutfi Sugeng Suharjito</h3>
+                        <p>Tester</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Developed by Yuros, specifically designed for robust Digital Asset Management and modern digital archiving.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
