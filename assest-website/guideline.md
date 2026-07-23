@@ -28,7 +28,7 @@
 |---|---|---|---|
 | background utama | dark navy/black | `#0C1016` | Background utama seluruh halaman |
 | teks & elemen utama | off-white | `#F8F8FF` | Headline, body text, ikon utama, tombol primer |
-| aksen / brand Color | orange-red | `#FF4500` | CTA utama, ikon highlight, garis penekanan, elemen interaktif |
+| aksen / brand Color | cyan | `#38D2D7` | CTA utama, ikon highlight, garis penekanan, elemen interaktif |
 | border / divider | slate gray gelap | `#2D3444` | Garis pemisah antar section, border card |
 | teks sekunder / muted | cool gray | `#98A0AD` | Subheadline, deskripsi, teks pendukung |
 | stroke sekunder | light blue-gray | `#A8B9D3` | Outline ikon, elemen dekoratif sekunder |
