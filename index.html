@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sparow OS - Download</title>
     <link rel="stylesheet" href="style.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -28,8 +26,7 @@
         <!-- Hero Section -->
         <div class="hero-section">
             <div class="hero-image-container">
-                <!-- Ganti source gambar (src) di bawah ini dengan link gambar hero OS Anda -->
-                <img src="asset-website/backround-hero/opsi1.png" alt="Blackbird OS Preview" class="hero-img">
+                <img src="asset-website/backround-hero/opsi1.png" alt="Sparow OS Preview" class="hero-img">
                 <div class="hero-content">
                     <h1>Sparow OS</h1>
                     <p>Bring the best Digital Asset Management experience. Select a Sparow edition and download below.</p>
@@ -37,130 +34,179 @@
             </div>
         </div>
 
+        <!-- Release Tabs -->
         <div class="release-tabs">
-            <button class="tab-btn active" id="btn-amanda">Sparow</button>
-            <!--<button class="tab-btn" id="btn-blackbird">Raven</button>-->
+            <button class="tab-btn active" id="btn-sparow">Iso</button>
+            <button class="tab-btn" id="btn-wiki">Wiki</button>
+            <button class="tab-btn" id="btn-docs-user">Dokumentasi User</button>
+            <button class="tab-btn" id="btn-docs-dev">Dokumentasi Developer</button>
         </div>
 
         <div class="file-browser">
-            <div class="browser-header">
-                <div class="col-name">File Name</div>
-                <div class="col-date">Date Modified</div>
-                <div class="col-size">Size</div>
-                <div class="col-action">
-                    <span class="header-align">Download</span>
-                    <span class="header-align" style="visibility: hidden;">Mirror</span>
-                </div>
-            </div>
-            <div class="file-list" id="list-amanda">
-                <!-- ISO Files (Highlight them) -->
-                <div class="file-row iso-file">
-                    <div class="col-name">
-                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="10" />
-                            <circle cx="12" cy="12" r="3" />
-                        </svg>
-                        <div class="file-details">
-                            <span class="filename">sparowx86_64.iso</span>
-                            <span class="file-badge">Recommended</span>
-                        </div>
-                    </div>
-                    <div class="col-date">24-July-2026 13:06</div>
-                    <div class="col-size">1.0 GB</div>
+            <!-- KONTEN 1: TAB SPAROW -->
+            <div id="content-sparow" style="display: block;">
+                <div class="browser-header">
+                    <div class="col-name">File Name</div>
+                    <div class="col-date">Date Modified</div>
+                    <div class="col-size">Size</div>
                     <div class="col-action">
-                        <a href="/source/blackbird-amanda.iso" class="btn-download" download>Download</a>
-                        <a href="https://onboardcloud.dl.sourceforge.net/project/blackbird/release-beta/blackbird-amanda.iso?viasf=1&fid=47947c083191922f" target="_blank" class="btn-download">Mirror</a>
-                        
+                        <span class="header-align">Download</span>
+                        <span class="header-align" style="visibility: hidden;">Mirror</span>
                     </div>
                 </div>
-                <div class="describe">
-
-                    <h2 class="col-name">Design Purposes</h2>
-
-                    <p>
-                    This operating system is a custom spin designed specifically to optimize Digital Asset Management (DAM) workflows. The goal of this project is to provide a dedicated, reliable environment for modern digital archiving, creative workflows, and robust asset infrastructure.
-                    </p>
-
-                    <p>
-                    Sparow OS offers a lightweight, highly customizable environment equipped with essential open-source tools for digital preservation, advanced metadata processing, and multimedia asset organization.
-                    </p>
-
-                    <p>
-                    One of the main features of this release is the Automated Session Logging during installation and asset handling. This ensures that all system configurations and data processing steps are documented for auditing, troubleshooting, and continuous workflow improvement.
-                    </p>
-
-                    <h3 class="col-name">Main Features</h3>
-                    
-                    <ul>
-                        <li>Optimized environment for Digital Asset Management (DAM)</li>
-                        <li>Integrated open-source tools for metadata processing and digital preservation</li>
-                        <li>Automated terminal session recording for workflow auditing</li>
-                        <li>Lightweight and customizable Linux architecture</li>
-                        <li>CLI-based deployment and system configuration</li>
-                    </ul>
-
-                    <!---<h3 class="col-name">Educational Purpose</h3>
-
-                    <p>
-                    This operating system is developed to bridge the gap between IT infrastructure and effective asset management. It is designed for professionals, archivists, and creators, empowering users to master and implement:
-                    </p>
-
-                    <ul>
-                        <li>Robust Digital Asset Management (DAM) systems</li>
-                        <li>Modern digital preservation and asset curation workflows</li>
-                        <li>Linux-based system administration for data and media servers</li>
-                        <li>Metadata standardization and efficient processings</li>
-                        <li>System logging and comprehensive workflow documentation</li>
-                    </ul>
-                    -->
-
-                    <h3 class="col-name">Warning and Disclaimer</h3>
-
-                    <p>
-                    Sparow OS is provided as a powerful open-source tool for digital asset management and archiving. While built for stability and efficiency, it is distributed without any warranty.
-                    </p>
-
-                    <p>
-                    Users are solely responsible for their own data management. The developers are not liable for any data loss, security breaches, or system instability that may occur during personal, commercial, or enterprise use. Always ensure you maintain secure, independent backups of your digital assets.
-                    </p>
-                </div>
-            </div>
-
-            <div class="file-list" id="list-blackbird" style="display: none;">
-                <!-- ISO Files for Blackbird -->
-                <!--<div class="file-row iso-file">
-                    <div class="col-name">
-                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="10" />
-                            <circle cx="12" cy="12" r="3" />
-                        </svg>
-                       <div class="file-details">
-                            <span class="filename">blackbird-ravenx86_64.iso</span>
-                        </div>
-                    </div>
-                    <div class="col-date">15-Apr-2026 09:20</div>
-                    <div class="col-size">1.2 GB</div>
-                    <div class="col-action">
-                        <a href="#" class="btn-download">Download</a>
-                    </div>
-                </div>-->
                 
-                <div class="describe">
+                <div class="file-list" id="list-amanda">
+                    <div class="file-row iso-file">
+                        <div class="col-name">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10" />
+                                <circle cx="12" cy="12" r="3" />
+                            </svg>
+                            <div class="file-details">
+                                <span class="filename">sparowx86_64.iso</span>
+                                <span class="file-badge">Recommended</span>
+                            </div>
+                        </div>
+                        <div class="col-date">24-July-2026 13:06</div>
+                        <div class="col-size">1.0 GB</div>
+                        <div class="col-action">
+                            <a href="/source/blackbird-amanda.iso" class="btn-download" download>Download</a>
+                            <a href="https://onboardcloud.dl.sourceforge.net/project/blackbird/release-beta/blackbird-amanda.iso?viasf=1&fid=47947c083191922f" target="_blank" class="btn-download">Mirror</a>
+                        </div>
+                    </div>
+                    
+                    <div class="describe">
+                        <h2 class="section-title">Design Purposes</h2>
+                        <p>
+                        This operating system is a custom spin designed specifically to optimize Digital Asset Management (DAM) workflows. The goal of this project is to provide a dedicated, reliable environment for modern digital archiving, creative workflows, and robust asset infrastructure.
+                        </p>
+                        <p>
+                        Sparow OS offers a lightweight, highly customizable environment equipped with essential open-source tools for digital preservation, advanced metadata processing, and multimedia asset organization.
+                        </p>
+                        <p>
+                        One of the main features of this release is the Automated Session Logging during installation and asset handling. This ensures that all system configurations and data processing steps are documented for auditing, troubleshooting, and continuous workflow improvement.
+                        </p>
 
-                    <h2 class="col-name">Design Purposes</h2>
+                        <h3 class="section-subtitle">Main Features</h3>
+                        <ul>
+                            <li>Optimized environment for Digital Asset Management (DAM)</li>
+                            <li>Integrated open-source tools for metadata processing and digital preservation</li>
+                            <li>Automated terminal session recording for workflow auditing</li>
+                            <li>Lightweight and customizable Linux architecture</li>
+                            <li>CLI-based deployment and system configuration</li>
+                        </ul>
 
-                    <p>
-                    This operating system is a core of Blackbird Project and Used for internal member only.
-                    </p>
+                        <h3 class="section-subtitle">Warning and Disclaimer</h3>
+                        <p>
+                        Sparow OS is provided as a powerful open-source tool for digital asset management and archiving. While built for stability and efficiency, it is distributed without any warranty.
+                        </p>
+                        <p>
+                        Users are solely responsible for their own data management. The developers are not liable for any data loss, security breaches, or system instability that may occur during personal, commercial, or enterprise use. Always ensure you maintain secure, independent backups of your digital assets.
+                        </p>
+                    </div>
+                </div>
+            </div>
 
+            <!-- KONTEN 2: TAB WIKI -->
+            <div id="content-wiki" style="display: none; padding: 2rem;">
+                
+                <!-- INI YANG BIKIN JADI 2 KOLOM (wiki-layout) -->
+                <div class="wiki-layout">
+                    
+                    <!-- Kiri: Sidebar Daftar Isi -->
+                    <aside class="wiki-sidebar">
+                        <div class="toc-title">Contents</div>
+                        <ul class="toc-list">
+                            <li><a href="#wiki-konsep">1 Konsep Dasar</a></li>
+                            <li><a href="#wiki-arsip">2 Standar Preservasi Digital</a></li>
+                            <li><a href="#wiki-metadata">3 Skema Metadata & Klasifikasi</a></li>
+                        </ul>
+                    </aside>
+
+                    <!-- Kanan: Isi Konten -->
+                    <div class="wiki-main">
+                        <h2 class="section-title" style="margin-top: 0; margin-bottom: 1.5rem;">Wiki Sparow OS</h2>
+                        
+                        <h3 id="wiki-konsep" class="section-subtitle">1 Konsep Dasar</h3>
+                        <p>Sparow OS dirancang untuk menjembatani infrastruktur IT dengan kebutuhan manajemen arsip digital. Sistem ini dioptimalkan untuk memproses aset digital skala besar dengan efisiensi tinggi.</p>
+
+                        <h3 id="wiki-arsip" class="section-subtitle">2 Standar Preservasi Digital</h3>
+                        <p>Sistem ini mendukung integrasi langsung dengan model OAIS (Open Archival Information System), memastikan pelestarian dokumen untuk jangka panjang secara aman dan terstruktur.</p>
+
+                        <h3 id="wiki-metadata" class="section-subtitle">3 Skema Metadata & Klasifikasi</h3>
+                        <p>Lingkungan bawaan telah dilengkapi dengan alat untuk memvalidasi dan memproses skema Dublin Core, MODS, dan format deskripsi bibliografi lainnya secara otomatis.</p>
+                    </div>
 
                 </div>
             </div>
+
+
+        <div class="file-browser">
+
+            <!-- KONTEN 3: TAB DOKUMENTASI USER -->
+            <div id="content-docs-user" style="display: none; padding: 2rem;">
+                <div class="wiki-layout">
+                    <!-- Kiri: Sidebar Daftar Isi -->
+                    <aside class="wiki-sidebar">
+                        <div class="toc-title">Contents</div>
+                        <ul class="toc-list">
+                            <li><a href="#docs-user-instalasi">1 Panduan Instalasi CLI</a></li>
+                            <li><a href="#docs-user-enkripsi">2 Konfigurasi Tang Server & Clevis</a></li>
+                            <li><a href="#docs-user-logging">3 Perekaman Sesi Terminal</a></li>
+                        </ul>
+                    </aside>
+
+                    <!-- Kanan: Isi Konten -->
+                    <div class="wiki-main">
+                        <h2 class="section-title" style="margin-top: 0; margin-bottom: 1.5rem;">Dokumentasi User</h2>
+                        
+                        <h3 id="docs-user-instalasi" class="section-subtitle">1 Panduan Instalasi CLI</h3>
+                        <p>Proses instalasi utama Sparow OS sepenuhnya dikendalikan melalui Command Line Interface (CLI) untuk memastikan konsumsi sumber daya tetap minimal selama deployment.</p>
+
+                        <h3 id="docs-user-enkripsi" class="section-subtitle">2 Konfigurasi Tang Server & Clevis</h3>
+                        <p>Untuk keamanan penyimpanan repositori arsip, dokumentasi ini menyediakan panduan setup enkripsi disk jaringan menggunakan container Tang server dan client Clevis, guna mencegah akses disk tanpa otorisasi.</p>
+
+                        <h3 id="docs-user-logging" class="section-subtitle">3 Perekaman Sesi Terminal</h3>
+                        <p>Fitur logging akan secara otomatis merekam riwayat interaksi administrator selama sesi pemeliharaan sistem perpustakaan digital untuk tujuan dokumentasi dan audit.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- KONTEN 4: TAB DOKUMENTASI DEVELOPER -->
+            <div id="content-docs-dev" style="display: none; padding: 2rem;">
+                <div class="wiki-layout">
+                    <!-- Kiri: Sidebar Daftar Isi -->
+                    <aside class="wiki-sidebar">
+                        <div class="toc-title">Contents</div>
+                        <ul class="toc-list">
+                            <li><a href="#docs-dev-instalasi">1 Panduan Instalasi CLI</a></li>
+                            <li><a href="#docs-dev-enkripsi">2 Konfigurasi Tang Server & Clevis</a></li>
+                            <li><a href="#docs-dev-logging">3 Perekaman Sesi Terminal</a></li>
+                        </ul>
+                    </aside>
+
+                    <!-- Kanan: Isi Konten -->
+                    <div class="wiki-main">
+                        <h2 class="section-title" style="margin-top: 0; margin-bottom: 1.5rem;">Dokumentasi Developer</h2>
+                        
+                        <h3 id="docs-dev-instalasi" class="section-subtitle">1 Panduan Instalasi CLI</h3>
+                        <p>Proses instalasi utama Sparow OS sepenuhnya dikendalikan melalui Command Line Interface (CLI) untuk memastikan konsumsi sumber daya tetap minimal selama deployment.</p>
+
+                        <h3 id="docs-dev-enkripsi" class="section-subtitle">2 Konfigurasi Tang Server & Clevis</h3>
+                        <p>Untuk keamanan penyimpanan repositori arsip, dokumentasi ini menyediakan panduan setup enkripsi disk jaringan menggunakan container Tang server dan client Clevis, guna mencegah akses disk tanpa otorisasi.</p>
+
+                        <h3 id="docs-dev-logging" class="section-subtitle">3 Perekaman Sesi Terminal</h3>
+                        <p>Fitur logging akan secara otomatis merekam riwayat interaksi administrator selama sesi pemeliharaan sistem perpustakaan digital untuk tujuan dokumentasi dan audit.</p>
+                    </div>
+                </div>
+            </div>
+
         </div>
+
 
         <!-- Contributors Section -->
         <section class="contributors-section">
-            <h2 class="section-title">Sparow Core Team Member</h2>
+            <h2 class="section-title" style="margin-top: 3rem; text-align: center;">Sparow Core Team Member</h2>
             <div class="contributors-grid">
                 <div class="contributor-card">
                     <div class="avatar">
@@ -186,7 +232,7 @@
                     </div>
                     <div class="contributor-info">
                         <h3>Muhammad Ridho N.I</h3>
-                        <p>Maintainer website </p>
+                        <p>Maintainer website</p>
                     </div>
                 </div>
                 <div class="contributor-card">
@@ -219,5 +265,4 @@
 
     <script src="main.js"></script>
 </body>
-
 </html>
