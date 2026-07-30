@@ -764,6 +764,12 @@ img {
     border-color: rgba(255, 255, 255, 0.2);
 }
 
+.file-browser {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    box-shadow: none;
+}
+
 /* Contributors Section */
 .section-title, .describe h2 {
     font-size: 40px;
