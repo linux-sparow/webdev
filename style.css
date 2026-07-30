@@ -352,6 +352,7 @@ img {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 1rem;
+    margin: 1.5rem;
 }
 
 .contributor-card {
@@ -398,7 +399,7 @@ img {
 }
 
 .contributor-info h3 {
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 600;
     color: var(--text-main);
     margin-bottom: 0.35rem;
