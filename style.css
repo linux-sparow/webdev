@@ -182,10 +182,9 @@ img {
 /* File Browser */
 .file-browser{
     background: var(--bg-card);
-    border: 1px solid var(--border-color);
+    border: none;
     border-radius: 0.75rem;
     overflow: hidden;
-    box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.5);
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     box-shadow: none;
