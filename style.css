@@ -190,6 +190,7 @@ img {
     box-shadow: none;
 }
 
+
 .browser-header {
     display: grid;
     grid-template-columns: 3.5fr 1.5fr 1fr 2fr;
