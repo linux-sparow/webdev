@@ -180,12 +180,15 @@ img {
 }
 
 /* File Browser */
-.file-browser {
+. {
     background: var(--bg-card);
     border: 1px solid var(--border-color);
     border-radius: 0.75rem;
     overflow: hidden;
     box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.5);
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    box-shadow: none;
 }
 
 .browser-header {
@@ -576,13 +579,6 @@ img {
     
 }
 /* File Browser */
-.file-browser {
-    background: var(--bg-card);
-    border: 1px solid var(--border-color);
-    border-radius: 0.75rem;
-    overflow: hidden;
-    box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.5);
-}
 
 .browser-header {
     display: grid;
@@ -762,12 +758,6 @@ img {
 .btn-download.secondary:hover {
     background: rgba(255, 255, 255, 0.05);
     border-color: rgba(255, 255, 255, 0.2);
-}
-
-.file-browser {
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-    box-shadow: none;
 }
 
 /* Contributors Section */
