@@ -765,10 +765,6 @@ img {
 }
 
 /* Contributors Section */
-.contributors-section {
-    border-top: 1px solid var(--border-color);
-}
-
 .section-title, .describe h2 {
     font-size: 40px;
     font-weight: 700;
@@ -782,6 +778,7 @@ img {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 1.5rem;
+    margin: 1.5rem;
 }
 
 .contributor-card {
